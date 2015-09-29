@@ -1,0 +1,367 @@
+/*
+ *  HowSecure
+ * 
+ *  Copyright (C) 2014 - Andrej Budinčević
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+/* =Reset 
+-------------------------------------------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+/* =General 
+-------------------------------------------------------------- */
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	background-color: #f0eeeb;
+}
+
+.container {
+	width: 100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 0 15px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* =Page 
+-------------------------------------------------------------- */
+
+/* This is the main page frame */
+
+#page-container {
+	width: 100%;
+	
+	background: #fdfdfd;
+	border: 1px solid #cbc9c7;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1), inset 0 0 2px rgba(0,0,0,0.1125);
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 30px 0 35px 0;
+	padding: 4.5%;
+	padding: 2.25% 4.5%;
+}
+
+/* =Logo 
+-------------------------------------------------------------- */
+
+#logo {
+	position: relative;	
+	margin: 20px 0 25px 0;
+	width:100%;
+}
+
+#logo.logo-centered {
+	text-align: center;
+}
+
+#logo a.logo-link {
+	text-decoration: none;
+}
+
+#logo h1 {
+	color: #555;
+	display: inline-block;
+	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 52px;
+	font-weight: 200;
+	margin-bottom: 0.2em;
+	text-align: center;
+	width:100%;
+}
+
+#logo h2 {
+	color: #555;
+	display: inline-block;
+	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+	margin-bottom: 0.2em;
+	text-align: center;
+	width:100%;
+}
+
+#logo h3 {
+	color: #666;
+	display: inline-block;
+	font-size: 13px;
+}
+
+#logo img {
+	height: auto;
+	
+	max-width: 100%;
+}
+
+/* =Content 
+-------------------------------------------------------------- */
+
+#content h2 {
+	color: #555;
+	display: inline-block;
+	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 30px;
+	font-weight: 200;
+	margin-bottom: 0.2em;
+}
+.table  {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	margin-top:40px;
+}
+.table td {
+	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
+	font-size:15px;
+	padding:10px 5px;
+	border: 1px solid #CCC;
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #606060;
+	overflow:hidden;
+	word-break:normal;
+}
+.table th {
+	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
+	font-size:15px;
+	font-weight:normal;
+	padding:10px 5px;
+	border: 1px solid #CCC;
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #606060;
+	overflow:hidden;
+	word-break:normal;
+}
+.table .right {
+	text-align:right
+}
+
+.table .fail,.table .pass,.table .warn {
+	width: 35px;
+	color: #fff;
+	text-align: center;
+}
+.table .fail {
+	background: #fa3939;
+}
+.table .pass {
+	background: #20cf35;
+}
+.table .warn {
+	background: #ffa02f;
+}
+.table .head {
+	width:50%;
+	color: #555;
+	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 30px;
+	font-weight: 200;
+	margin-bottom: 0.2em;
+}
+.table .fixed {
+	width: 35px;
+	text-align: center;
+}
+.sharer {
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.table .share {
+	width: 33.3%;
+	text-align: center;
+	font-size:14px;
+}
+input[type=password] {
+	width: 80%;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	border: 1px solid #CCC;
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #606060;
+	display: block;
+	font-size: 13px;
+	margin-bottom: 7px;
+	max-width: 100%;
+	padding: 10px;
+}
+#content a {
+	color: #36659f;
+	text-decoration: none;
+}
+#content a:hover {
+	color: #36659f;
+	text-decoration: underline;
+}
+
+
+/* =Footer 
+-------------------------------------------------------------- */
+
+#footer {
+	border: transparent;
+	border-width: 0 1px;
+	color: #888;
+	color: #999999;
+	font-size: 0.85em;
+	margin-bottom: 35px;
+	padding: 0px 5px;
+	text-align: center;
+}
+
+#footer .copyright {
+	margin-bottom: 0.75em;
+}
+
+#footer .designed {
+}
+
+#footer a {
+	color: #777;
+	text-decoration: none;
+}
